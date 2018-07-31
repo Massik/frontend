@@ -5,5 +5,6 @@ const sevr = http.createServer(function(request,response){
     const file = fs.readFileSync('Just1.html','utf8');
     response.end(file);
 });
-sevr.listen(process.env.port || 3000);
+
+sevr.listen(process.env.PORT || 3000);
 console.log('Server started!!');
